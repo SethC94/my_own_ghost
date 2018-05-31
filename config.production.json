@@ -1,0 +1,35 @@
+{
+  "url": "http://localhost:2368/",
+  "server": {
+    "port": 2368,
+    "host": "0.0.0.0"
+  },
+  "database": {
+    "client": "sqlite3",
+    "connection": {
+      "filename": "/var/lib/ghost/content/data/ghost.db"
+    }
+  },
+  "mail": {
+    "transport": "Direct"
+  },
+  "logging": {
+    "transports": [
+      "file",
+      "stdout"
+    ]
+  },
+  "process": "systemd",
+  "paths": {
+    "contentPath": "/var/lib/ghost/content"
+  },
+  "storage": {
+  "active": "s3",
+  "s3": {
+    "accessKeyId": "AKIAIGDJOL66LHVW727A",
+    "secretAccessKey": "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",
+    "region": "us-west-1",
+    "bucket": "blog-platform-test"
+  }
+}
+}
